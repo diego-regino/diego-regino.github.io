@@ -1,0 +1,188 @@
+:root {
+    --primer-azul: #3f5094;
+    --segundo-azul: #334752;
+    --tercer-azul: #182227;
+    --letra-azul: #637988;
+}
+
+* {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1,h2,h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--segundo-azul);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 img {
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+
+h2.una-franja img{
+    margin-top: -25px;
+    margin-left: -23px;
+}
+
+h2.titulo-doble-franja img {
+    display: inline;
+    vertical-align: middle;    
+}
+
+h3 {
+    font-size: 18px;
+    /* font-size: 1.5rem; */    
+    line-height: 1.2;
+}
+
+p {
+    color: var(--letra-azul);
+    line-height: 1.333;
+}
+
+section {
+    padding: 20px 15%;
+}
+
+.boton {
+    background: var(--segundo-azul);
+    color: #ffffff;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 100px;
+}
+
+nav {
+    background: #EEE;
+    background: linear-gradient(rgba(27, 47, 127, .8), rgba(27, 47, 127, .8)), url('img/andalucia-baner.jpg') no-repeat left 41%;
+    position: absolute;
+    width: 100%;
+}
+
+nav div.nav {
+    display: inline-block;
+    text-align: center;
+}
+
+nav div.nav_logo {
+    background: url('img/andalucia-cd.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-75px);
+}
+
+nav div.nav.nav_left {
+    float: left;
+    width: 50%;
+}
+
+nav div.nav.nav_right {
+    float: right;
+    width: 50%;
+}
+
+nav div.nav ul {
+    /* background: #CCC; */
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+nav div.nav ul li {
+    display: inline-block;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+/* Fin NAV */
+
+/* Inicio HEADER */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .2);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/andalucia-baner.jpg') no-repeat center 50px;
+    background-size: auto auto, auto auto;
+    background-size: 90%;
+}
+
+header .footer_header {
+    background: rgba(27, 47, 127, 1);
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+}
+
+/* Fin HEADER */
+
+section#historia {
+    background: url('img/balon.png') no-repeat center left;
+    background-size: 80%;
+}
+
+.contenedor-dos-column {
+    text-align: justify;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    grid-column-gap: 25px;
+}
+
+.contenedor-dos-column h2 {
+    text-align: left;
+}
+
+.contenedor-dos-column .boton {
+    margin-top: 50px;
+    float: right;
+}
+
+.contenedor-card {
+    /* width: 80%; */
+    margin: 30px auto;
+    /* background: #fAA; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedor-card .card-valor {
+    position: relative;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.contenedor-card .card-valor .icono-valor {
+    height: 100px;
+    width: 100%;
+    background: url('Contenedor.png') no-repeat 55% 55%;    
+    background-size: 310px;
+    position: relative;
+}
+
+.contenedor-card .card-valor h3 {
+    margin: 40px auto 10px auto;
+}
+
+.contenedor-card .card-valor p {       
+    text-align: center;
+}
